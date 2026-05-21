@@ -1,0 +1,109 @@
+/* Custom Global Variables & Theme Setup */
+:root {
+    --bg-main: #fcfcfd;
+    --dark-primary: #121416;
+    --accent-color: #0d6efd;
+    --text-muted-gray: #6c757d;
+    --border-light: #eaecef;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--dark-primary);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Minimalist Header Section */
+.hero-section {
+    background-color: var(--dark-primary);
+    padding: 80px 0;
+    border-bottom: 4px solid var(--accent-color);
+}
+
+.text-accent {
+    color: #4da3ff !important;
+    letter-spacing: 0.05em;
+}
+
+.text-muted-light {
+    color: #a0aec0;
+}
+
+/* Reusable Info Card Styling */
+.info-card {
+    border: 1px solid var(--border-light) !important;
+    border-radius: 10px !important;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.card-heading {
+    font-weight: 700;
+    color: var(--dark-primary);
+    border-bottom: 2px solid #f1f3f5;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+}
+
+/* Elegant Section Headers */
+.section-title {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    position: relative;
+    color: var(--dark-primary);
+}
+
+/* Technical Stack Pill Badges */
+.skill-badge {
+    background-color: #f1f3f5 !important;
+    color: #495057 !important;
+    font-weight: 500;
+    padding: 6px 12px !important;
+    margin: 3px 2px;
+    font-size: 0.75rem !important;
+    border: 1px solid #e9ecef;
+}
+
+/* Timeline Components */
+.period-badge {
+    background-color: #e6f0ff !important;
+    color: var(--accent-color) !important;
+    font-weight: 600;
+    font-size: 0.75rem !important;
+    padding: 6px 12px !important;
+}
+
+/* Interactive Project Cards */
+.project-card {
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-color: #ccd7e0 !important;
+}
+
+.tech-tag {
+    background-color: #f8f9fa !important;
+    color: var(--text-muted-gray) !important;
+    font-weight: 500;
+    font-size: 0.7rem !important;
+    margin-right: 4px;
+    border: 1px solid #edf2f7;
+}
+
+.custom-btn {
+    border-radius: 6px;
+    font-size: 0.85rem;
+    padding: 8px 20px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+/* Mobile Responsiveness Improvements */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 0;
+    }
+}
