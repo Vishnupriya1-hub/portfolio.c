@@ -45,6 +45,11 @@ body {
     margin-bottom: 16px;
 }
 
+/* Small spacing adjustment for sub-sections inside cards */
+.info-card .card-heading:not(:first-of-type) {
+    margin-top: 24px;
+}
+
 /* Elegant Section Headers */
 .section-title {
     font-weight: 700;
